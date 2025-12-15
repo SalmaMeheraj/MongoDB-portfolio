@@ -1,3 +1,7 @@
+// Movies collection schema validation
+// This schema enforces required fields, data types, and constraints
+// Used to maintain data integrity in MongoDB
+
 db.createCollection("movies", {
   validator: {
     $jsonSchema: {
